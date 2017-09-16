@@ -36,9 +36,10 @@ public class CustomerController {
     public CustomerController() {
         customers = new ArrayList<>();
         customers.add(new Customer(1, "12345", "Hendi Santika", CustomerType.INDIVIDUAL));
-        customers.add(new Customer(2, "12346", "Anna Malinowska", CustomerType.INDIVIDUAL));
-        customers.add(new Customer(3, "12347", "Paweł Michalski", CustomerType.INDIVIDUAL));
-        customers.add(new Customer(4, "12348", "Karolina Lewandowska", CustomerType.INDIVIDUAL));
+        customers.add(new Customer(2, "12346", "Uzumaki Naruto", CustomerType.INDIVIDUAL));
+        customers.add(new Customer(3, "12347", "Hatake Kakashi", CustomerType.INDIVIDUAL));
+        customers.add(new Customer(4, "12348", "Uchiha Sasuke", CustomerType.INDIVIDUAL));
+        customers.add(new Customer(5, "12349", "Sakura Haruno", CustomerType.INDIVIDUAL));
     }
 
     @RequestMapping("/customers/pesel/{pesel}")
