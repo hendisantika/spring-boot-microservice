@@ -4,6 +4,11 @@ server:
 spring:
   application:
     name: account-service
+  datasource:
+    url: jdbc:mysql://localhost:3306/oauth2?createDatabaseIfNotExist=true&useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
 
 logging:
   level:
