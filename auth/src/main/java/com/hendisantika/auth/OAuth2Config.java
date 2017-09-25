@@ -1,6 +1,5 @@
 package com.hendisantika.auth;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.oauth2.config.annotation.web.configuration.AuthorizationServerConfigurerAdapter;
 
 /**
@@ -64,7 +63,7 @@ public class OAuth2Config extends AuthorizationServerConfigurerAdapter {
 //			.authorizedGrantTypes("client_credentials")
 //			.scopes("read")
 //			.autoApprove(true);
-}
+//}
 
 //	@Autowired
 //	private DataSource dataSource;
