@@ -25,6 +25,6 @@ public class GatewayApplication {
 	@Bean
 	public DataSource dataSource() {
 		return DataSourceBuilder.create().url("jdbc:mysql://localhost:3306/oauth2?useSSL=false")
-				.username("default").password("default").driverClassName("com.mysql.jdbc.Driver").build();
+				.username("root").password("root").driverClassName("com.mysql.jdbc.Driver").build();
 	}
 }
