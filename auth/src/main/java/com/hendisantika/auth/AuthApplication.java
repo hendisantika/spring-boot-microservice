@@ -7,6 +7,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableAuthorizationServer;
 import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
+import org.springframework.session.jdbc.config.annotation.web.http.EnableJdbcHttpSession;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,7 +18,7 @@ import java.security.Principal;
 @EnableAuthorizationServer
 @EnableDiscoveryClient
 @EnableResourceServer
-//@EnableJdbcHttpSession
+@EnableJdbcHttpSession
 @RestController
 public class AuthApplication {
 
@@ -32,7 +33,7 @@ public class AuthApplication {
 
 	@Bean
 	public DataSource dataSource() {
-		return DataSourceBuilder.create().url("jdbc:mysql://localhost:3306/oauth2?useSSL=false")
+		return DataSourceBuilder.create().url("jdbc:mysql://localhost:3306/oauth2?createDatabaseIfNotExist=true&useSSL=false")
 				.username("default").password("default").driverClassName("com.mysql.jdbc.Driver").build();
 	}
 }
