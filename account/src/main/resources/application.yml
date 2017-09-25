@@ -8,7 +8,12 @@ spring:
     url: jdbc:mysql://localhost:3306/oauth2?createDatabaseIfNotExist=true&useSSL=false
     username: root
     password: root
-    driver-class-name: com.mysql.jdbc.Driver
+#    driver-class-name: com.mysql.jdbc.Driver
+    driverClassName: com.mysql.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+    database: MYSQL
 
 logging:
   level:
