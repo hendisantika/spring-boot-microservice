@@ -5,9 +5,9 @@ spring:
   application:
     name: gateway-server
   datasource:
-      url: jdbc:mysql://192.168.1.2:3306/oath2?useSSL=false
-      username: default
-      password: default
+      url: jdbc:mysql://localhost:3306/oath2?useSSL=false
+      username: root
+      password: root
 
 logging:
   level:
