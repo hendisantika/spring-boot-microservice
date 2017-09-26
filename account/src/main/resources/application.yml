@@ -26,7 +26,7 @@ security:
   oauth2:
     resource:
 #      loadBalanced: true
-      userInfoUri: http://localhost:9999/user
+      userInfoUri: http://localhost:9990/user
 
 eureka:
   client:
