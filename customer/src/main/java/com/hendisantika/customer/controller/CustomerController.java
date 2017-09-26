@@ -6,6 +6,7 @@ import com.hendisantika.customer.model.Account;
 import com.hendisantika.customer.model.Customer;
 import com.hendisantika.customer.model.CustomerType;
 import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -26,7 +27,7 @@ import java.util.List;
 
 @RestController
 public class CustomerController {
-//    @Autowired
+    @Autowired
     private AccountClient accountClient;
 
     protected Logger logger = Logger.getLogger(CustomerApplication.class.getName());
