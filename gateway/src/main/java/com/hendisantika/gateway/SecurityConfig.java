@@ -43,6 +43,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     public void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.jdbcAuthentication().dataSource(dataSource);
-//		auth.inMemoryAuthentication().withUser("root").password("password").roles("USER");
+		auth.inMemoryAuthentication().withUser("root").password("root").roles("USER");
     }
 }

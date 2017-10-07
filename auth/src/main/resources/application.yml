@@ -16,7 +16,7 @@ logging:
 security:
   user:
     name: root
-    password: password
+    password: root
   oauth2:
     client:
       client-id: acme

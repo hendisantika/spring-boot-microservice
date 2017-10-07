@@ -37,7 +37,7 @@ eureka:
 security:
   user:
     name: root
-    password: password
+    password: root
   oauth2:
     client:
       accessTokenUri: http://localhost:8765/uua/oauth/token
