@@ -21,7 +21,23 @@ zuul:
       serviceId: account-service
 
 eureka:
+  instance:
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}:${random.uuid}
   client:
     registerWithEureka: false
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
+
+## Configuring info endpoint
+info:
+  app:
+    name: @project.artifactId@
+    description: @project.description@
+    version: @project.version@
+    java-vendor: ${java.specification.vendor}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
